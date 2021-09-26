@@ -2,6 +2,15 @@
 #+AUTHOR: Ye Peng
 
 * 简介
-自用overlay
+Gentoo 自用overlay
 * 包含的包
 =media-sound/listen1desktop-bin=
+* 使用
+创建 =/etc/portage/repos.conf/yp.conf=
+#+begin_src conf
+[exodev]
+location = /var/db/repos/exodev
+sync-type = git
+sync-uri = https://git.yemouren.com/yepeng/yp-overlay.git
+auto-sync = true
+#+end_src
