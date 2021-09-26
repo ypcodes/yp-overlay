@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>exodev</name>
+    <description>Ye Peng's Overlay</description>
+    <homepage>https://blog.yemouren.com/</homepage>
+    <owner>
+      <email>yemouren@protonmail.com</email>
+      <name>Ye Peng</name>
+    </owner>
+    <source type="git">
+    git://git.yemouren.com/yepeng/yp-overlay.git</source>
+  </repo>
+</repositories>
