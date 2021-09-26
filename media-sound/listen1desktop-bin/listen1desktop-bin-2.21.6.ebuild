@@ -13,6 +13,9 @@ KEYWORDS="~amd64"
 
 src_unpack() {
 	mkdir listen1desktop-bin-2.21.6
+}
+
+src_install() {
 	cat > Makefile << "EOF"
 DEST ?= /usr/bin
 
@@ -29,8 +32,5 @@ uninstall:
 		@rm -rf $(DEST)/kunst
 		@echo Listen1 has been removed from your device
 EOF
-}
-
-src_install() {
 	emake DESTDIR="${D}" PREFIX=/usr install
 }
