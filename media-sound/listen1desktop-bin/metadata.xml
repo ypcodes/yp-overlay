@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>office@gentoo.org</email>
+    <name>Listen1 desktop bin</name>
+  </maintainer>
+  <longdescription>Listen1 is one for all free music in china
+  (Windows, Mac, Linux desktop)</longdescription>
+</pkgmetadata>
