@@ -15,9 +15,12 @@ src_unpack() {
 	mkdir listen1desktop-bin-${PV}
 }
 
+src_prepare() {
+	default
+	cp ../../distdir/listen1_${PV}_linux_x86_64.AppImage .
+}
+
 src_install() {
-	install  ../../distdir/listen1_${PV}_linux_x86_64.AppImage .
-	dodir /opt/listen1
 	exeinto /opt/listen1
 	doexe listen1_${PV}_linux_x86_64.AppImage
 	dosym /opt/listen1/listen1_${PV}_linux_x86_64.AppImage /usr/bin/listen1
