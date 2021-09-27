@@ -27,7 +27,7 @@ install:
 		@echo Listen1 has been installed on your device
 
 uninstall:
-		@rm -rf $(DEST)/kunst
+		@rm -rf $(DEST)/listen1
 		@echo Listen1 has been removed from your device
 EOF
 	# Install
