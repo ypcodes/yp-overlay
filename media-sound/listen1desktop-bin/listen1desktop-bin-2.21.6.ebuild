@@ -8,7 +8,7 @@ HOMEPAGE="http://listen1.github.io/listen1"
 SRC_URI="https://github.com/listen1/listen1_desktop/releases/download/v${PV}/listen1_${PV}_linux_x86_64.AppImage"
 
 LICENSE="MIT"
-SLOT="0"
+SLOT="2"
 KEYWORDS="~amd64"
 
 src_unpack() {
