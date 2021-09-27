@@ -24,4 +24,23 @@ src_install() {
 	exeinto /opt/listen1
 	doexe listen1_${PV}_linux_x86_64.AppImage
 	dosym /opt/listen1/listen1_${PV}_linux_x86_64.AppImage /usr/bin/listen1
+
+	wget https://raw.githubusercontent.com/listen1/listen1_desktop/master/app/resources/logo.png -O listen1.png
+	cat > listen1.desktop << "EOF"
+[Desktop Entry]
+Name=Listen1
+Comment=One for all free music in China
+Exec=env DESKTOPINTEGRATION=no "/opt/listen1/listen1_2.21.6_linux_x86_64.AppImage" %U
+Terminal=false
+Type=Application
+Icon=/usr/share/icons/listen1/listen1.png
+StartupWMClass=listen1
+X-AppImage-Version=2.21.6
+Categories=Utility;
+EOF
+	insinto /usr/share/applications/
+	doins listen1.desktop
+	insinto /usr/share/icons/listen1
+	doins listen1.png
+	elog "you may want to download icon:sudo wget https://raw.githubusercontent.com/listen1/listen1_desktop/master/app/resources/logo.png -O /usr/share/icons/listen1/listen1.png"
 }
