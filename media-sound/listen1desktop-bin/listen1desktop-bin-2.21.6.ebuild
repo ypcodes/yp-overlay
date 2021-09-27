@@ -16,20 +16,6 @@ src_unpack() {
 }
 
 src_install() {
-	# create Makefile
-	cat > Makefile << "EOF"
-DEST ?= /usr/bin
-
-install:
-		@mkdir -p $(DESTDIR)/$(DEST)
-		@cp ../../distdir/listen1_${PV}_linux_x86_64.AppImage $(DESTDIR)/$(DEST)/listen1
-		@chmod 755 $(DESTDIR)/$(DEST)/listen1
-		@echo Listen1 has been installed on your device
-
-uninstall:
-		@rm -rf $(DEST)/listen1
-		@echo Listen1 has been removed from your device
-EOF
-	# Install
-	emake DESTDIR="${D}" PREFIX=/usr install
+	cp ../../distdir/listen1_${PV}_linux_x86_64.AppImage listen1
+	dobin listen1
 }
