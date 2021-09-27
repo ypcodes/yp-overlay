@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="one for all free music in china (Windows, Mac, Linux desktop)"
-HOMEPAGE="http://listen1.github.io/listen1"
+HOMEPAGE="https://listen1.github.io/listen1"
 SRC_URI="https://github.com/listen1/listen1_desktop/releases/download/v${PV}/listen1_${PV}_linux_x86_64.AppImage"
 
 LICENSE="MIT"
