@@ -16,9 +16,9 @@ src_unpack() {
 }
 
 src_install() {
-	install -m755 ../../distdir/listen1_${PV}_linux_x86_64.AppImage .
+	install  ../../distdir/listen1_${PV}_linux_x86_64.AppImage .
 	dodir /opt/listen1
-	insinto /opt/listen1
-	doins listen1_${PV}_linux_x86_64.AppImage
+	exeinto /opt/listen1
+	doexe listen1_${PV}_linux_x86_64.AppImage
 	dosym /opt/listen1/listen1_${PV}_linux_x86_64.AppImage /usr/bin/listen1
 }
