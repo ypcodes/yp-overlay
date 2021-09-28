@@ -9,6 +9,6 @@
       <name>Ye Peng</name>
     </owner>
     <source type="git">
-    git://git.yemouren.com/yepeng/yp-overlay.git</source>
+    https://github.com/ypcodes/yp-overlay.git</source>
   </repo>
 </repositories>
