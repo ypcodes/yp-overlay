@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <repositories version="1.0">
   <repo quality="experimental" status="unofficial">
-    <name>exodev</name>
+    <name>yp-overlay</name>
     <description>Ye Peng's Overlay</description>
     <homepage>https://blog.yemouren.com/</homepage>
     <owner>
