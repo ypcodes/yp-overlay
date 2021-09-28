@@ -42,5 +42,6 @@ EOF
 	doins listen1.desktop
 	insinto /usr/share/icons/listen1
 	doins listen1.png
-	elog "you may want to download icon:sudo wget https://raw.githubusercontent.com/listen1/listen1_desktop/master/app/resources/logo.png -O /usr/share/icons/listen1/listen1.png"
+	ebegin "you may want to download icon:sudo wget https://raw.githubusercontent.com/listen1/listen1_desktop/master/app/resources/logo.png -O /usr/share/icons/listen1/listen1.png"
+	eend "OK"
 }
