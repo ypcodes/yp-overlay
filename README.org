@@ -9,7 +9,7 @@ Gentoo 自用overlay
 创建 =/etc/portage/repos.conf/yp.conf=
 #+begin_src conf
 [yp]
-location = /var/db/repos/yp
+location = /var/db/repos/yp-overlay
 sync-type = git
 sync-uri = https://git.yemouren.com/yepeng/yp-overlay.git
 auto-sync = true
