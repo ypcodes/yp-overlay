@@ -5,6 +5,7 @@
 Gentoo 自用 overlay
 * 包含的包
 =media-sound/listen1desktop-bin=
+
 =dev-python/dicom=
 * 使用
 创建 =/etc/portage/repos.conf/yp.conf=
