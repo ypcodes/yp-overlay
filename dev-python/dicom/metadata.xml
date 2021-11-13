@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>yemouren@protonmail.com</email>
+    <name>dicom</name>
+  </maintainer>
+  <longdescription>Read, modify and write DICOM files with python
+  code</longdescription>
+</pkgmetadata>

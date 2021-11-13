@@ -1,16 +1,17 @@
-#+TITLE: README
+#+TITLE: Ye Peng's Personal Overlay
 #+AUTHOR: Ye Peng
 
 * 简介
-Gentoo 自用overlay
+Gentoo 自用 overlay
 * 包含的包
 =media-sound/listen1desktop-bin=
+=dev-python/dicom=
 * 使用
 创建 =/etc/portage/repos.conf/yp.conf=
 #+begin_src conf
 [yp]
 location = /var/db/repos/yp-overlay
 sync-type = git
-sync-uri = https://git.yemouren.com/yepeng/yp-overlay.git
+sync-uri = https://github/ypcodes/yp-overlay.git
 auto-sync = true
 #+end_src
